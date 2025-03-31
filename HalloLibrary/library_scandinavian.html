@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="mainScripts/mainCss.css" />
+    <link rel="icon" type="icon" href="resources/library_icon.svg" />
+</head>
+
+<body>
+    <nav>
+        <!-- Enlace para cambiar a historico de peliculas -->
+        <card class="historic new" style="background-image: url('./resources/nav_calendar.png')"
+            onclick="changeSite('./library_index.html')"></card>
+        <card class="historic old" style="background-image: url('./resources/nav_star.png')"
+            onclick="changeSite('./library_seen.html')"></card>
+        <card class="historic half" style="background-image: url('./resources/nav_battery.png')"
+            onclick="changeSite('./library_half.html')"></card>
+        <card class="historic half current" style="background-image: url('./resources/nav_scandinavian.png')"></card>
+    </nav>
+    <div id="content">
+        <!-- Catalogo de peliculas -->
+        <card style="background-image: url('./resources/ordet.png')"></card>
+        <card style="background-image: url('./resources/el_septimo_sello.png')"></card>
+        <card style="background-image: url('./resources/sisu.png')"></card>
+    </div>
+    <script src="mainScripts/mainJs.js"></script>
+</body>
+
+</html>

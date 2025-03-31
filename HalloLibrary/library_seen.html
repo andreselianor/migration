@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="mainScripts/mainCss.css" />
+    <link rel="icon" type="icon" href="resources/library_icon.svg" />
+</head>
+
+<body>
+    <nav>
+        <!-- Enlace para cambiar a historico de peliculas -->
+        <card class="historic new" style="background-image: url('./resources/nav_calendar.png')"
+            onclick="changeSite('./library_index.html')"></card>
+        <card class="historic old current" style="background-image: url('./resources/nav_star.png')"></card>
+        <card class="historic half" style="background-image: url('./resources/nav_battery.png')"        
+        onclick="changeSite('./library_half.html')"></card>
+        <card class="historic half" style="background-image: url('./resources/nav_scandinavian.png')"
+            onclick="changeSite('./library_scandinavian.html')"></card>
+    </nav>
+    <div id="content">
+        <!-- Catalogo de peliculas vistas -->
+        <card style="background-image: url('./resources/lagrimas_del_sol.png')"></card>
+        <card style="background-image: url('./resources/call_me_by_your_name.png')"></card>
+        <card style="background-image: url('./resources/crooks.png')"></card>
+
+        <card style="background-image: url('./resources/ladronas.png')"></card>
+
+        <card style="background-image: url('./resources/predator.png');"></card>
+
+        <card style="background-image: url('./resources/elden_ring.png');"></card>
+        <card style="background-image: url('./resources/wartales.png');"></card>
+        <card style="background-image: url('./resources/hard_west_2.png');"></card>
+        <card style="background-image: url('./resources/nier_automata.png');"></card>
+        <card style="background-image: url('./resources/tunic.png');"></card>
+        <card style="background-image: url('./resources/wall_paper_engine.png');"></card>
+        <card style="background-image: url('./resources/triangle_strategy.png');"></card>
+        <card style="background-image: url('./resources/new_cycle.png');"></card>
+        <card style="background-image: url('./resources/x4_foundations.png');"></card>
+        <card style="background-image: url('./resources/soviet_republic.png');"></card>
+        <card style="background-image: url('./resources/terra_scape.png');"></card>
+        <card style="background-image: url('./resources/cozy_room.png');"></card>
+        <card style="background-image: url('./resources/interior_designer.png');"></card>
+    </div>
+    <script src="mainScripts/mainJs.js"></script>
+</body>
+
+</html>

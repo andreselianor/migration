@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="mainScripts/mainCss.css" />
+    <link rel="icon" type="icon" href="resources/library_icon.svg" />
+</head>
+
+<body>
+    <nav>
+        <!-- Enlace para cambiar a historico de peliculas -->
+        <card class="historic new current" style="background-image: url('./resources/nav_calendar.png')"></card>
+        <card class="historic old" style="background-image: url('./resources/nav_star.png')"
+            onclick="changeSite('./library_seen.html')"></card>
+        <card class="historic half" style="background-image: url('./resources/nav_battery.png')"
+            onclick="changeSite('./library_half.html')"></card>
+            <card class="historic half" style="background-image: url('./resources/nav_scandinavian.png')"
+                onclick="changeSite('./library_scandinavian.html')"></card>
+    </nav>
+    <div id="content">
+        <!-- Catalogo de peliculas para ver -->
+        <card style="background-image: url('./resources/etiqueta_fiction.png')" onclick="displayFiction()"></card>
+        <card style="background-image: url('./resources/nueve_reinas.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/cosmopolis.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/señorita_tinkle.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/inside_job.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/cocktail.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/cremaster.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/el_ocaso_del_samurai.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/herz_aus_glass.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/they_live.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/get_carter.png')" class="tagFiction"></card>
+        <card style="background-image: url('./resources/salvar_al_soldado_ryan.png')" class="tagFiction"></card>
+
+        <card style="background-image: url('./resources/etiqueta_musica.png')" onclick="displayMusic()"></card>
+        <card style="background-image: url('./resources/the_division_bell.png')" class="tagMusic"></card>
+        <card style="background-image: url('./resources/21pilots.png')" class="tagMusic"></card>
+        <card style="background-image: url('./resources/enemigos_intimos.jpg')" class="tagMusic"></card>
+        <card style="background-image: url('./resources/john_adams.png')" class="tagMusic"></card>
+        <card style="background-image: url('./resources/phantom_thread.png')" class="tagMusic"></card>
+        <card style="background-image: url('./resources/lullabies_to_paralyze.png');" class="tagMusic"></card>
+
+        
+        <card style="background-image: url('./resources/etiqueta_europe.png')" onclick="displayEurope()"></card>
+        <card style="background-image: url('./resources/cuento_de_primavera.png');" class="tagEurope"></card>
+
+        <card style="background-image: url('./resources/etiqueta_romantica.png')" onclick="displayLove()"></card>
+
+        <card style="background-image: url('./resources/etiqueta_accion.png')" onclick="displayAction()"></card>
+        <card style="background-image: url('./resources/comando.png')" class="tagAction"></card>
+        <card style="background-image: url('./resources/double_team.png')" class="tagAction"></card>
+    </div>
+    <script src="mainScripts/mainJs.js"></script>
+</body>
+
+</html>
